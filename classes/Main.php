@@ -12,7 +12,7 @@ class Main
     	</p>';
     }
 
-    public function checkPassword($errors)
+    public function checkPassword(\WP_Error $errors)
     {
         if (empty($_POST['user_password'])) {
             $errors->add('empty_password', __('<strong>ERROR</strong>: The password field is empty.'));
