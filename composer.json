@@ -1,0 +1,17 @@
+{
+  "name": "rudloff/register-password",
+  "type": "wordpress-plugin",
+  "description": "Let users choose their password when they register",
+  "license": "GPL-3.0",
+  "autoload": {
+    "psr-4": {
+      "RegisterPassword\\": "classes/"
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "~3.2.0",
+    "squizlabs/php_codesniffer": "~2.7.0",
+    "phpunit/phpunit": "~5.7.2",
+    "10up/wp_mock": "~0.1.0"
+  }
+}
