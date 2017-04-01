@@ -10,8 +10,6 @@ Author URI: https://www.rudloff.pro/
 
 require_once __DIR__.'/vendor/autoload.php';
 
-use RegisterPassword\Main;
-
-add_action('register_form', [Main::class, 'addFormField']);
-add_action('registration_errors', [Main::class, 'checkPassword']);
-add_action('user_register', [Main::class, 'setPassword']);
+add_action('register_form', ['RegisterPassword\Main', 'addFormField']);
+add_action('registration_errors', ['RegisterPassword\Main', 'checkPassword']);
+add_action('user_register', ['RegisterPassword\Main', 'setPassword']);
