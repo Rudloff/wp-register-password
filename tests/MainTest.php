@@ -2,8 +2,8 @@
 
 namespace RegisterPassword\Test;
 
-use RegisterPassword\Main;
 use Mockery;
+use RegisterPassword\Main;
 use WP_Mock;
 
 class MainTest extends \PHPUnit_Framework_TestCase
