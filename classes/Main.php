@@ -1,4 +1,5 @@
 <?php
+
 namespace RegisterPassword;
 
 class Main
@@ -16,6 +17,7 @@ class Main
         if (empty($_POST['user_password'])) {
             $errors->add('empty_password', __('<strong>ERROR</strong>: The password field is empty.'));
         }
+
         return $errors;
     }
 
