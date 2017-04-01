@@ -4,7 +4,7 @@ namespace RegisterPassword;
 
 class Main
 {
-    public function addFormField()
+    static public function addFormField()
     {
         echo '<p>
     		<label for="user_password">'.__('Password').'<br>
@@ -12,7 +12,7 @@ class Main
     	</p>';
     }
 
-    public function checkPassword(\WP_Error $errors)
+    static public function checkPassword(\WP_Error $errors)
     {
         if (empty($_POST['user_password'])) {
             $errors->add('empty_password', __('<strong>ERROR</strong>: The password field is empty.'));
@@ -21,7 +21,7 @@ class Main
         return $errors;
     }
 
-    public function setPassword($userId)
+    static public function setPassword($userId)
     {
         if (isset($_POST['user_password']) && !empty($_POST['user_password'])) {
             wp_set_password($_POST['user_password'], $userId);
