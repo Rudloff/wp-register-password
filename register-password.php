@@ -4,7 +4,7 @@ Plugin Name: Register Password
 Plugin URI: https://github.com/Rudloff/wp-register-password
 Description: Let users choose their password when they register
 Author: Pierre Rudloff
-Version: 0.1.0
+Version: 0.1.1
 Author URI: https://www.rudloff.pro/
  */
 
